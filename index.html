@@ -1,0 +1,69 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>My Hangman Game</title>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+			<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bungee+Inline&effect=3d-float">
+			<link type="text/css" rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body>
+	<div class="jumbotron" style="text-align: center; background-color:orange">
+  		<h1 class="font-effect-3d-float">Instrumental Hangman Game!</h1>
+  		<p>Guess the Instruments</p>
+  		<img src="guitar.jpeg"/>
+	</div>
+	
+	<div class="panel panel-default" style="border:solid 1px">
+  		<div class="panel-heading">
+  		<h3 class="panel-title">
+    	Wins:<span id="wins"> 0
+  		</span>
+    	</h3>
+  		</div>
+	</div>
+
+	<div class="panel panel-default" style="border:solid 1px">
+  		<div class="panel-heading">
+  		<h3 class="panel-title">
+    	Word to Guess:
+    	<span id="guesses">
+    	_ _ _ _ _ _
+    	</span>
+    	</h3>
+  		</div>
+	</div>
+
+	<div class="panel panel-default">
+  		<div class="panel-heading">
+  		<h3 class="panel-title">
+    	Guesses Left:<span id="guessesLeft"> 9 
+    	</span>
+    	</h3>
+  		</div>
+	</div>
+
+	<div class="panel panel-default">
+  		<div class="panel-heading">
+  		<h3 class="panel-title">
+    	Losses:<span id="losses"> 0
+    	</span> 
+    	</h3>
+  		</div>
+	</div>
+	</body>
+	<script type=text/javascript>
+
+	var wordtoGuess = ["_ _ _ _ _ _","_ _ _ _ _"];
+	var wins = 0;
+	var losses = 0; 
+	var guessesLeft = 9; 
+	var letterPressed;
+	
+	function onkeyup (){
+
+	}
+
+
+	</script> 
+</html>

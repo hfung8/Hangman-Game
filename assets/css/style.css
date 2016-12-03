@@ -1,0 +1,18 @@
+	h1{
+		font-family: "Bungee Inline",serif;
+		text-align: center;
+	}
+	p{
+		color:black;
+	}
+	body{
+		background-color: #087c57;
+	}
+	img{
+		width:300px;
+		margin:auto;
+		display:block;
+	}
+	div#panelbody{
+		width:500px;
+	}
