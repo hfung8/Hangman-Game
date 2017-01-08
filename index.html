@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +17,7 @@
 		<div><h2 id="wordToGuess">_ _ _ _ _ _</h2></div>
 		<div>Wrong guesses</div>
 		<div id="wrongGuesses"></div>
-		<div>Number of Guesses</div>
+		<div>Guesses Left</div>
 		<div id="numGuesses"></div>
 		<div>Number of Wins</div>
 		<div id="winCounter"></div>
@@ -56,14 +57,14 @@
 		document.getElementById("winCounter").innerHTML = winCount;
 		document.getElementById("lossCounter").innerHTML = lossCount;
 
-		//Testing / Debugging
-		console.log (selectedWord);
-		console.log(lettersInWord);
-		console.log(numBlanks);
-		console.log(blanksAndSuccesses);
+		// //Testing / Debugging
+		// console.log (selectedWord);
+		// console.log(lettersInWord);
+		// console.log(numBlanks);
+		// console.log(blanksAndSuccesses);
 	}
 
-function checkLetters (letter){
+function checkLetters(letter){
 	//Check if letter exists in code at all
 	var isLetterInWord = false;
 
@@ -84,12 +85,12 @@ function checkLetters (letter){
 	//Letter wasn't found 
 	else {
 		wrongLetters.push(letter);
-		numGuesses--;
+		guessesLeft--;
 	}
 
 // console.log blanksAndSuccesses
 	console.log(blanksAndSuccesses);
-}
+};
 
 // function round complete 
 
@@ -114,7 +115,7 @@ if (lettersInWord.toString() == blanksAndSuccesses.toString()){
 		document.getElementById("lossCounter").innerHTML = lossCount; 
 		startGame();
 	}
-}
+};
 	//Main Processes	
 	// =============================================================
 
@@ -130,7 +131,7 @@ if (lettersInWord.toString() == blanksAndSuccesses.toString()){
 
 	//Testing Debugging 
 	console.log(letterGuessed);
-}
+};
 
 	</script>
 </body>
